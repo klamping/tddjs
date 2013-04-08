@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -21,7 +20,6 @@ app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'components/bootstrap')));
 
 // development only
 if ('development' == app.get('env')) {
@@ -31,13 +29,10 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/users', user.list);
 
+app.get('/img/:image', function(req, res){
+  res.redirect('/images/' + req.params.image)
+});
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
-
-// set up LESS CSS processing
-app.use(require('less-middleware')({ src: __dirname + '/components/bootstrap/less' }));
-app.use(express.static(__dirname + '/public'));
-app.use(express.bodyParser());
-app.use(express.methodOverride());
-app.use(app.router);

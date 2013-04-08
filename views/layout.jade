@@ -2,8 +2,49 @@ doctype 5
 html
   head
     title= title
-    link(rel='stylesheet', href='/styles.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
   body
-    block content
+
+  .container-fluid
+    .row-fluid
+        .span3
+          .well.sidebar-nav
+            ul.nav.nav-list
+              li.nav-header Training Index
+              li.active
+                a(href='#') Day One - First Steps
+              li
+                <!-- a(href='#') -->Day Two
+              li
+                <!-- a(href='#') -->Day Three
+              li
+                <!-- a(href='#') -->Day Four
+              li
+                <!-- a(href='#') -->Day Five
+              li
+                <!-- a(href='#') -->Day Six
+              li
+                <!-- a(href='#') -->Day Seven
+              li
+                <!-- a(href='#') -->Day Eight
+              li
+                <!-- a(href='#') -->Day Nine
+              li
+                <!-- a(href='#') -->Day Ten
+          //
+            /.well 
+        //
+          /span
+        .span9
+            block content
+        //
+          /span
+      //
+        /row
+      hr
+      footer
+        p 
+
     script(src="http://code.jquery.com/jquery.js")
-    script(src="js/bootstrap.min.js")
+    script(src="javascripts/bootstrap.min.js")
