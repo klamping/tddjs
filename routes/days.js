@@ -1,7 +1,7 @@
 /*
  * GET day page.
  */
-//  
+//
 var days = [
    { title: 'Day One - First Steps' },
    { title: 'Day Two - Testing Trim' },
@@ -12,9 +12,14 @@ var days = [
    { title: 'Day Seven' },
    { title: 'Day Eight' },
    { title: 'Day Nine' },
-   { title: 'Day Ten' },
+   { title: 'Day Ten' }
 ];
 
 exports.view = function(req, res){
-  res.render('day-' + req.params.num, { title: days[req.params.num - 1].title });
+   var day = req.params.num;
+  res.render('day-' + day, {
+     title: days[day - 1].title,
+     days: days,
+     activeDay: day
+  });
 };

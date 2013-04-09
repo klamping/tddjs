@@ -29,7 +29,6 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/day/:num', days.view);
-//app.get('/users', user.list);
 
 app.get('/img/:image', function(req, res){
   res.redirect('/images/' + req.params.image);

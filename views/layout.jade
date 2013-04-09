@@ -13,29 +13,11 @@ html
           .well.sidebar-nav
             ul.nav.nav-list
               li.nav-header Training Index
-              
-              li
-                a(href='/day/1') Day One - First Steps
-              li
-                a(href='/day/2') Day Two - Testing Trim
-              li
-                <!-- a(href='#') -->Day Three
-              li
-                <!-- a(href='#') -->Day Four
-              li
-                <!-- a(href='#') -->Day Five
-              li
-                <!-- a(href='#') -->Day Six
-              li
-                <!-- a(href='#') -->Day Seven
-              li
-                <!-- a(href='#') -->Day Eight
-              li
-                <!-- a(href='#') -->Day Nine
-              li
-                <!-- a(href='#') -->Day Ten
+              each day, i in days
+                li(class=activeDay == i + 1 ? "active" : "")
+                  a(href="/day/#{i + 1}") #{day.title}
           //
-            /.well 
+            /.well
         //
           /span
         .span9
@@ -46,7 +28,7 @@ html
         /row
       hr
       footer
-        p 
+        p
 
     script(src="http://code.jquery.com/jquery.js")
     script(src="javascripts/bootstrap.min.js")
