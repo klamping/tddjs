@@ -5,6 +5,7 @@
 var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
+  , days = require('./routes/days')
   , http = require('http')
   , path = require('path');
 
@@ -27,7 +28,8 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/users', user.list);
+app.get('/day/:num', days.view);
+//app.get('/users', user.list);
 
 app.get('/img/:image', function(req, res){
   res.redirect('/images/' + req.params.image);
