@@ -9,19 +9,19 @@ var days = [{
 }, {
    title: 'Day Three - Assertions'
 }, {
-   title: 'Day Four'
+   title: 'Day Four - BDD, Other Libraries, Test Setup' //
 }, {
-   title: 'Day Five'
+   title: 'Day Five' // Asynchronous code/Working with the dom (Mock Objects)/Simulated Event
 }, {
-   title: 'Day Six'
+   title: 'Day Six'  // Functional testing - PhantomJS & CasperJS
 }, {
-   title: 'Day Seven'
+   title: 'Day Seven' // Why this is hard... Writing Testable JavaScript
 }, {
-   title: 'Day Eight'
+   title: 'Day Eight' // YETI, Common patterns
 }, {
-   title: 'Day Nine'
+   title: 'Day Nine' // Toggle - Day One (Defining Requirements, Unit tests)
 }, {
-   title: 'Day Ten'
+   title: 'Day Ten' // Toggle Day Two (Functional Tests)
 }];
 
 exports.view = function(req, res){
