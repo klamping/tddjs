@@ -5,7 +5,7 @@
 var days = [
    { title: 'Day One - First Steps' },
    { title: 'Day Two - Testing Trim' },
-   { title: 'Day Three' },
+   { title: 'Day Three - Assertions' },
    { title: 'Day Four' },
    { title: 'Day Five' },
    { title: 'Day Six' },
