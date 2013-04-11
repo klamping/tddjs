@@ -2,9 +2,9 @@ extends layout
 
 block content
   .hero-unit
-    h1 Day Four - BDD, Other Libraries, Test Setup
+    h1 #{title}
     p
-      | TBD
+      | We change our thinking with a twist on TDD and a new test framework
   .row-fluid
     .span6
       h2 Office Hours
@@ -12,12 +12,37 @@ block content
         | Recap will be added here
 
       h2 Research
-
+      p
+        | We've studied YUI Test some, but it's a good idea to look at other frameworks as well. Along with that, let's take a quick look at another testing theory: "Behavior Driven Development". Luckily, the article below covers both topics.
+      p
+        a.btn(href="http://net.tutsplus.com/tutorials/javascript-ajax/testing-your-javascript-with-jasmine/") Testing Your JavaScript with Jasmine »
+      p
+        | This short YUIConf talk reinforces what BDD is about. He shows off a gallery module he's written to help convert YUI Test assertions and setup into a more BDD friendly format.
+      p
+        a.btn(href="http://youtu.be/JGoNbSWUTuI?t=30m56s") Behavior-Driven Development for YUI »
     //
       /span
     .span6
       h2 Assignment
+      p
+        | You've been tasked with writing unit tests for <a href="https://gist.github.com/klamping/5360521">two 'fizz buzz' functions</a>. One of the functions doesn't work in a specific way; it's your job to find out which function is broken.
+      p
+        | Unfortunately, the code has been obfuscated, so unless you cheat (don't cheat), you don't know which function is broken. To find out, you're going to write some tests that check the functions to see which one is broken and why.
+      ul
+        li Create a list of test names from the requirements below
+        li Using Jasmine, write your tests to validate FizzBuzz's behavior
+        li Once you tests are written, add the two functions to the page and pass them in to the test cases
+        li Send me your workspace along with your answer to which fizzBuzz is broken and why
 
-
-      h2 Other Resources
-
+      h2 FizzBuzz Requirements
+      p
+        | FizzBuzz is a function that receives a number as its argument;
+      ul
+        li
+         | if the number is divisible by 3, the function should return 'fizz';
+        li
+         | if the number is divisible by 5, the function should return 'buzz';
+        li
+         | if the number is divisible by 3 and 5, the function should return 'fizzbuzz';
+        li
+         | otherwise the function should return the number, or false if no number was provided or if the value provided was not a number
