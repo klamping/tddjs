@@ -33,7 +33,7 @@ block content
         | Unfortunately, the code has been obfuscated, so unless you cheat (don't cheat), you don't know which function is broken. To find out, you're going to write some tests that check the functions to see which one is broken and why.
       ul
         li Create a list of test names from the requirements below
-        li Using Jasmine, write your tests to validate FizzBuzz's behavior
+        li Using Jasmine*, write your tests to validate FizzBuzz's behavior
         li Once you tests are written, add the two functions to the page and pass them in to the test cases
         li Send me your workspace along with your answer to which fizzBuzz is broken and why
 
@@ -49,3 +49,12 @@ block content
          | if the number is divisible by 3 and 5, the function should return 'fizzbuzz';
         li
          | otherwise the function should return the number, or false if no number was provided or if the value provided was not a number
+
+      h3 *Steps for getting Jasmine up and running
+
+      ul
+        li Create a new C9 workspace with Node.js as the backend
+        li In the terminal, run 'npm install jasmine-node'
+        li Change the extension on 'hello-world.js' to be '.spec.js' (hello-world.js -> hello-world.spec.js)
+        li Write a Jasmine test
+        li In the terminal, run 'jasmine-node ./' (this will execute all test in files with an extension of .spec.js)
