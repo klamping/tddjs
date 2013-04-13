@@ -1,23 +1,27 @@
-extends layout
+extends day
 
-block content
-  .hero-unit
-    h1 #{title}
-    p
-      | TBD
-  .row-fluid
-    .span6
-      h2 Office Hours
-      p
-        | Recap will be added here
+block description
+  | If this were easy, you wouldn't need training.
 
-      h2 Research
+block research
+  p
+    | Today, we have a lot of research to do. It turns out 
+    // http://www.nczonline.net/blog/2009/11/17/the-curious-case-of-javascript-unit-testing/
+  p
+    a.btn(href="...") My Link &raquo;
 
-    //
-      /span
-    .span6
-      h2 Assignment
+   // http://www.adequatelygood.com/Writing-Testable-JavaScript.html
+   // https://shanetomlinson.com/2013/testing-javascript-frontend-part-1-anti-patterns-and-fixes/
+   
+   // 
 
+block resources
+// http://www.youtube.com/watch?v=OzjogCFO4Zo
+  p
+    | Not required, but these links can be useful
 
-      h2 Other Resources
-
+block assignment
+  p
+    | Over the next three days, you'll be creating a ... the Test-driven way. 
+    ul
+      li Define Requirements for the system

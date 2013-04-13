@@ -1,55 +1,45 @@
-extends layout
+extends day
 
-block content
-  .hero-unit
-    h1 #{title}
-    p
-      | On day two, we write our first tests, validating the functionality of a simple 'trim' function.
-  .row-fluid
-    .span6
-      h2 Q &amp; A Session
-      p
-        | In the day's Office Hours we talk about sharing our Cloud9 repository for feedback, what YUI is and why we're using it, where we can see USAA using YUI Test, and run through the exercise for the day.
-      // p
-        a.btn(href='http://go/tddjs-daytwo') View Meeting Replay (USAA-only) »
-      h2 Research
-      p
-        | We'll be using YUI Test for our exercises, so have a quick read of the 'Test Cases' section on the YUI Test "Getting Started" page to get a better idea for how the tests are set up. Don't worry about the rest of the page, we'll get to those concepts later.
-      p
-        a.btn(href='http://yuilibrary.com/yuitest/#testcases') Test Cases »
-      p
-        | For our exercise, we'll be taking the concept behind and four-year old blog post and updating it to run in Node.JS. Skim through the article to get a better idea of what we'll be doing (we'll come back to it in the exercise).
-      p
-        a.btn(href='http://cjohansen.no/en/tdd/a_test_driven_example') A Test Driven Example »
-      p
-        | Hopefully you made it past at least the first two paragraphs in that article before getting lost. Don't worry, take a look at the following screencast to see how to get the main concept behind that article up and running in your Cloud9 workspace.
-      p
-        a.btn(href='http://www.youtube.com/watch?v=o_KT5EIoh4A') Resurrecting A Test Driven Example (Video) »
-    //
-      /span
-    .span6
-      h2 Assignment
-      .alert.alert-info
-        | Please share your Cloud9 workspaces with me if you haven't already. There should be instructions in the e-mail I sent out.
-      p
-        | We'll start the assignment by basically recreating what was done in the video. Then you'll see if you can complete the rest of the tests described in the article on your own.
-      ul
-        li Get your own workspace up and running
-        li Install YUITest via NPM
-        li Recreate the first tests talked about in the video
-        li Run those tests from terminal and confirm they fail
-        li Add the functionality described in the video to get the first test to pass
-        li *Bonus* Complete the tests described in the "Test Driven Example" article
-      p
-        a.btn(href='https://gist.github.com/klamping/5346440') (Spoiler) See finished example »
+block description
+  | Write your own tests to validate the functionality of a simple 'trim' function
 
-      h2 Other Resources
-      ul
-        li
-          a(href="http://www.yuiblog.com/blog/2008/12/01/yuitest-getting-started/") Getting Started with JavaScript Unit Testing and YUI Test
-        li
-          a(href="http://www.youtube.com/watch?v=AnRqo0nPfZY")
-            |  Nicholas Zakas: Test Driven Development with YUI Test (Video)
-          | &nbsp;or&nbsp;
-          a(href="http://www.slideshare.net/nzakas/test-driven-development-with-yui-test-presentation")
-            | (Slides)
+block research
+  p
+    | We'll be using YUI Test for our exercises, so have a quick read of the 'Test Cases' section on the YUI Test "Getting Started" page to get a better idea for how the tests are set up. Don't worry about the rest of the page, we'll get to those concepts later.
+  p
+    a.btn(href='http://yuilibrary.com/yuitest/#testcases') Test Cases »
+  p
+    | For our exercise, we'll be taking the concept behind and four-year old blog post and updating it to run in Node.JS. Skim through the article to get a better idea of what we'll be doing (we'll come back to it in the exercise).
+  p
+    a.btn(href='http://cjohansen.no/en/tdd/a_test_driven_example') A Test Driven Example »
+  p
+    | Hopefully you made it past at least the first two paragraphs in that article before getting lost. Don't worry, take a look at the following screencast to see how to get the main concept behind that article up and running in your Cloud9 workspace.
+  p
+    a.btn(href='http://www.youtube.com/watch?v=o_KT5EIoh4A') Resurrecting A Test Driven Example (Video) »
+
+
+block resources
+  ul
+    li
+      a(href="http://www.yuiblog.com/blog/2008/12/01/yuitest-getting-started/") Getting Started with JavaScript Unit Testing and YUI Test
+    li
+      a(href="http://www.youtube.com/watch?v=AnRqo0nPfZY")
+        |  Nicholas Zakas: Test Driven Development with YUI Test (Video)
+      | &nbsp;or&nbsp;
+      a(href="http://www.slideshare.net/nzakas/test-driven-development-with-yui-test-presentation")
+        | (Slides)
+// In the day's Office Hours we talk about sharing our Cloud9 repository for feedback, what YUI is and why we're using it, where we can see USAA using YUI Test, and run through the exercise for the day.
+// a.btn(href='http://go/tddjs-daytwo') View Meeting Replay (USAA-only) »
+
+block assignment
+  p
+    | We'll start the assignment by basically recreating what was done in the video. Then you'll see if you can complete the rest of the tests described in the article on your own.
+  ul
+    li Get your own workspace up and running
+    li Install YUITest via NPM
+    li Recreate the first tests talked about in the video
+    li Run those tests from terminal and confirm they fail
+    li Add the functionality described in the video to get the first test to pass
+    li *Bonus* Complete the tests described in the "Test Driven Example" article
+  p
+    a.btn(href='https://gist.github.com/klamping/5346440') (Spoiler) See finished example »

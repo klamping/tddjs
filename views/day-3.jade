@@ -1,47 +1,39 @@
-extends layout
+extends day
 
-block content
-  .hero-unit
-    h1 #{title}
-    p
+block description
       | We take a look at how assertions are formatted and how we can create our own
-  .row-fluid
-    .span6
-      h2 Office Hours
-      p
-        | We cover a brief overview of how assertions are set up.
-      p
-        a.btn(href='http://gotddjs-daythree') Recap (Video) »
 
-      h2 Research
-      p
-        | Getting tests to pass is one thing, but we also need to make sure our tests make sense. Read the following blog post for why they way you write your assertions matters
-      p
-        a.btn(href='http://uxebu.com/blog/2013/01/08/make-tests-read-like-a-book/') Make tests read like a book »
+block research
+  p
+    | Getting tests to pass is one thing, but we also need to make sure our tests make sense. Read the following blog post for why they way you write your assertions matters
+  p
+    a.btn(href='http://uxebu.com/blog/2013/01/08/make-tests-read-like-a-book/') Make tests read like a book »
 
-      p
-        | Knowing how assertions are built is a great way to improve your understanding of just what's going in. Review the following YUI 3 Gallery Module to get a better idea of what writing your own assertion looks like.
-      p
-        a.btn(href='http://yuilibrary.com/gallery/show/test-extras') Description »
-        &nbsp;
-        a.btn(href='https://github.com/yui/yui3-gallery/blob/master/src/gallery-test-extras/js/Assert.js') Source Code »
-      p
-        | Of course, a step-by-step walkthrough is usually better. Watch the following video to get a good idea for how to write your own test assertions.
-        a.btn(href='http://www.youtube.com/watch?v=lJO9FJv6B4Q') Writing your own YUI Test Assertions (Video)  »
-    //
-      /span
-    .span6
-      h2 Assignment
-      p
-        | It's time to be a little more creative. In today's assignment, you're going to create your own assertions.
-      ul
-        li Create a new workspace
-        li Install YUI Test
-        li Create two new assertions (you decide what they do) by writing a function that uses an existing YUI assertion in a specific way
-        li Be sure to include helpful error text
-        li Finally, use that assertion in a couple of tests (you decide what you're testing)
+  p
+    | Knowing how assertions are built is a great way to improve your understanding of just what's going in. Review the following YUI 3 Gallery Module to get a better idea of what writing your own assertion looks like.
+  p
+    a.btn(href='http://yuilibrary.com/gallery/show/test-extras') Description »
+    &nbsp;
+    a.btn(href='https://github.com/yui/yui3-gallery/blob/master/src/gallery-test-extras/js/Assert.js') Source Code »
+  p
+    | Of course, a step-by-step walkthrough is usually better. Watch the following video to get a good idea for how to write your own test assertions.
+    a.btn(href='http://www.youtube.com/watch?v=lJO9FJv6B4Q') Writing your own YUI Test Assertions (Video)  »
 
-      h2 Other Resources
-      ul
-        li
-          a(href="https://github.com/yui/yui3-gallery/tree/master/src/gallery-test-dom") Another set of extra testing assertions for YUI Gallery
+block resources
+  ul
+    li
+      // TODO review/edit video and move to YouTube if possible
+      a(href='http://gotddjs-daythree') A brief overview of how assertions are set up (Video) »
+    li
+      a(href="https://github.com/yui/yui3-gallery/tree/master/src/gallery-test-dom") Another set of extra testing assertions for YUI Gallery
+
+block assignment
+  h2 Assignment
+  p
+    | It's time to be a little more creative. In today's assignment, you're going to create your own assertions.
+  ul
+    li Create a new workspace
+    li Install YUI Test
+    li Create two new assertions (you decide what they do) by writing a function that uses an existing YUI assertion in a specific way
+    li Be sure to include helpful error text
+    li Finally, use that assertion in a couple of tests (you decide what you're testing)

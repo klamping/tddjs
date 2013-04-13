@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  ul.pager
+    if (activeDay > 1)
+      - var yest = parseInt(activeDay, 10) - 1
+      li.previous
+        a(href="/day/#{yest}") &larr; Yesterday
+    else 
+      li.previous
+        a(href="/") &larr; Training Overview
+    if (activeDay < 10)
+      - var tom = parseInt(activeDay, 10) + 1
+      li.next
+        a(href="/day/#{tom}") Tomorrow &rarr;
+
+  .row-fluid
+    .span6
+      h2 Research
+      block research
+
+      h3 Other Resources
+      block resources
+
+      h2 Assignment
+      block assignment
+
+    .span6
+      h2 Discussion
+        #disqus_thread
+        script
+            var disqus_shortname = '10daystotestdrivenjavascript';
+
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        noscript Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.          

@@ -1,23 +1,18 @@
-extends layout
+extends day
 
-block content
-  .hero-unit
-    h1 #{title}
-    p
-      | TBD
-  .row-fluid
-    .span6
-      h2 Office Hours
-      p
-        | Recap will be added here
+block description
+  | This is my day description
 
-      h2 Research
+block research
+  p
+    | Here is what you need to research
+  p
+    a.btn(href="...") My Link &raquo;
 
-    //
-      /span
-    .span6
-      h2 Assignment
+block resources
+  p
+    | Not required, but these links can be useful
 
-
-      h2 Other Resources
-
+block assignment
+  p
+    | Here is the assignment for the day

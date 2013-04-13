@@ -1,23 +1,18 @@
-extends layout
+extends day
 
-block content
-  .hero-unit
-    h1 #{title}
-    p
-      | TBD
-  .row-fluid
-    .span6
-      h2 Office Hours
-      p
-        | Recap will be added here
+block description
+  | This is my day description
 
-      h2 Research
+block research
+  p
+    | So far, we've run a majority of our tests from inside of NodeJS. But what happens when we want our script needs the DOM to operate? There's no need to give up; we can mock the DOM in Node using <a href="https://github.com/tmpvar/jsdom">jsdom, a JavaScript implementation of the W3C DOM</a>.
+  p
+    a.btn(href="youtube") Mocking the DOM in NodeJS with YUI and jsdom &raquo;
 
-    //
-      /span
-    .span6
-      h2 Assignment
+block resources
+  p
+    | Not required, but these links can be useful
 
-
-      h2 Other Resources
-
+block assignment
+  p
+    | Here is the assignment for the day

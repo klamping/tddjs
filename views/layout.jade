@@ -4,7 +4,7 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
-    link(rel="shortcut icon", href="favicon.ico")
+    link(rel="shortcut icon", href="/favicon.ico")
   body
 
   .container-fluid
@@ -12,6 +12,8 @@ html
         .span3
           .well.sidebar-nav
             ul.nav.nav-list
+              li
+                a(href="/") Training Overview
               li.nav-header Training Index
               each day, i in days
                 li(class=activeDay == i + 1 ? "active" : "")
@@ -21,7 +23,12 @@ html
         //
           /span
         .span9
-            block content
+          .hero-unit
+            h1 #{title}
+            p
+              block description
+          block content
+
         //
           /span
       //
@@ -31,4 +38,4 @@ html
         p
 
     script(src="http://code.jquery.com/jquery.js")
-    script(src="javascripts/bootstrap.min.js")
+    script(src="/javascripts/bootstrap.min.js")
