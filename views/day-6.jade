@@ -5,15 +5,26 @@ block description
 
 block research
   p
-    | Simple explanation of Mocks
+    | Mock objects are used to eliminate test dependencies on other objects. Consider a method that makes an Ajax request. If the server is down, the test will fail to return a valid result, despite the code being perfectly fine. This is the perfect case for using a mock object.
+  p
+    a.btn(href="https://github.com/yui/yuitest/wiki/Mock-Objects") Mock Objects in YUI Test  &raquo;
   p
     | So far, we've run a majority of our tests from inside of NodeJS. But what happens when we want our script needs the DOM to operate? There's no need to give up; we can mock the DOM in Node using <a href="https://github.com/tmpvar/jsdom">jsdom, a JavaScript implementation of the W3C DOM</a>.
   p
-    a.btn(href="youtube") Mocking the DOM in NodeJS with YUI and jsdom &raquo;
+    a.btn(href="http://yuilibrary.com/yui/docs/yui/nodejs-dom.html") Mocking the DOM in NodeJS with YUI and jsdom &raquo;
+  p
+    | Mocks help get rid of dependencies, but what do we do when  a function has indirect outputs to other software components, instead of a specific return value? This is when 'spies' come in handy.
+  blockquote
+    | We can use test spies and make assertions on things such as the number of calls, arguments passed to specific functions, return values and more.
+  p
+    a.btn(href="http://cjohansen.no/en/javascript/javascript_test_spies_stubs_and_mocks#toc80380_3") Test Spies in Sinon.js &raquo;
+
 
 block resources
   p
     a(href="http://sinonjs.org/") Sinon.JS
+  p
+    a(href="http://www.pabich.eu/2010/07/java-script-unit-testing-with-yui-test.html") JavaScript unit testing with YUI Test and Jack mocking framework
 
 
 //http://pathfindersoftware.com/2006/11/tdd_and_javascr/
@@ -22,9 +33,12 @@ block resources
 // http://jsmockito.org/
 
 //http://iainjmitchell.com/blog/?p=296
-// http://www.pabich.eu/2010/07/java-script-unit-testing-with-yui-test.html
 // http://agilepainrelief.com/notesfromatooluser/2008/11/unit-testing-in-javascript.html
 
 block assignment
   p
-    | Here is the assignment for the day
+    | Using the tests in the Spoilr exercise recently completed, convert them to run inside of NodeJS (instead of a browser).
+  ul
+    li In your existing Spoilr workspace, create a new file called 'spoilr-node.js'.
+    li In that file, following the directions in the 'YUI and jsdom' article, set up an environment for executing the Spoilr-tests.js file in NodeJS.
+    li Run your tests with the command "node spoilr-node.js"
