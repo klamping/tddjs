@@ -6,7 +6,7 @@ block content
       - var yest = parseInt(activeDay, 10) - 1
       li.previous
         a(href="/day/#{yest}") &larr; Yesterday
-    else 
+    else
       li.previous
         a(href="/") &larr; Training Overview
     if (activeDay < 10)
@@ -27,7 +27,9 @@ block content
 
     .span6
       h2 Discussion
-        #disqus_thread
+      p Questions, suggestions and any other feedback can be commented below. You're welcome to share a link to your workspace through this form as well.
+
+      #disqus_thread
         script
             var disqus_shortname = '10daystotestdrivenjavascript';
 
@@ -36,4 +38,4 @@ block content
                 dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
             })();
-        noscript Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.          
+        noscript Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.
