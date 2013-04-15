@@ -1,9 +1,11 @@
 extends day
 
 block description
-  | This is my day description
+  | Faking stuff is never good, except when your writing tests.
 
 block research
+  p
+    | Simple explanation of Mocks
   p
     | So far, we've run a majority of our tests from inside of NodeJS. But what happens when we want our script needs the DOM to operate? There's no need to give up; we can mock the DOM in Node using <a href="https://github.com/tmpvar/jsdom">jsdom, a JavaScript implementation of the W3C DOM</a>.
   p
@@ -11,7 +13,17 @@ block research
 
 block resources
   p
-    | Not required, but these links can be useful
+    a(href="http://sinonjs.org/") Sinon.JS
+
+
+//http://pathfindersoftware.com/2006/11/tdd_and_javascr/
+// http://cjohansen.no/en/javascript/sinon_js_0_6_0_fake_xmlhttprequest_and_improved_test_framework_integration
+// http://cjohansen.no/en/javascript/test_spies_stubs_and_mocks_part_1_5
+// http://jsmockito.org/
+
+//http://iainjmitchell.com/blog/?p=296
+// http://www.pabich.eu/2010/07/java-script-unit-testing-with-yui-test.html
+// http://agilepainrelief.com/notesfromatooluser/2008/11/unit-testing-in-javascript.html
 
 block assignment
   p
