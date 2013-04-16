@@ -13,7 +13,7 @@ var days = [{
 }, {
    title: 'Day Seven - Structure, YETI'
 }, {
-   title: 'Day Eight - Why this is hard'
+   title: 'Day Eight - Write Testable Code'
 }, {
    title: 'Day Nine - Final Project - Part 1'
 }, {
