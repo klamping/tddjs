@@ -1,13 +1,13 @@
 extends day
 
 block description
-  | "TDD doesn't mean you're better, it just means you catch your mistakes very quickly." 
+  | "TDD doesn't mean you're better, it just means you catch your mistakes very quickly."
 
 block research
   p
-    | The quote above is <a href="https://twitter.com/klamping/status/314765397184368640">paraphrased from James Shore</a> in his fantastic screencast series "<a href="http://www.letscodejavascript.com/">Let's Code: Test-Driven JavaScript</a>". 
+    | The quote above is <a href="https://twitter.com/klamping/status/314765397184368640">paraphrased from James Shore</a> in his fantastic screencast series "<a href="http://www.letscodejavascript.com/">Let's Code: Test-Driven JavaScript</a>".
   p
-    | What's great about TDD is that not only does it help catch bugs immediately, it also prevents them by encouraging you towards more modular and maintainable code. If you're code is hard to test, it's going to be hard to maintain as well. 
+    | What's great about TDD is that not only does it help catch bugs immediately, it also prevents them by encouraging you towards more modular and maintainable code. If you're code is hard to test, it's going to be hard to maintain as well.
   p
     a.btn(href="http://www.adequatelygood.com/Writing-Testable-JavaScript.html") Writing Testable JavaScript &raquo;
   p
@@ -18,18 +18,30 @@ block research
 block resources
   ul
     li
-      a(href="http://www.youtube.com/watch?v=OzjogCFO4Zo") 
+      a(href="http://www.youtube.com/watch?v=OzjogCFO4Zo")
         | Writing Testable JavaScript (Video)
 
 block assignment
   p
-    | Over the next three days, you'll be creating a simple Tic-Tac-Toe game the Test-driven way. To help us on our way, complete these initial admin steps to get started:
+    | Over the next three days, you'll be creating <a href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life">the Game of Life</a> the Test-driven way.
+
+  p
+    | Here are the basic rules for the game of life:
+  ol
+    li Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
+    li Any live cell with more than three live neighbours dies, as if by overcrowding.
+    li Any live cell with two or three live neighbours lives on to the next generation.
+    li Any dead cell with exactly three live neighbours becomes a live cell.
+
+  p
+    | To help us on our way, complete these initial admin steps to get started:
 
   ul
     li Create a new workspace in Cloud9
-    li Delete the 'hello-world.js' file from the 
+    li Delete the 'hello-world.js' file from the
     li Create three new folders: 'lib', 'src' and 'test'
     li Open 'README.md' and delete the contents
     li In this file, define the requirements* for the system so that you'll be ready to start your tests tomorrow.
+
   p
     | *For information on the .md format, check out <a href="http://daringfireball.net/projects/markdown/syntax">the Offical Markdown Syntax Documentation</a>.
