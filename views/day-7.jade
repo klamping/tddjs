@@ -1,16 +1,49 @@
 extends day
 
 block description
-  | TBD
+  | Help automate test execution by creating a common structure.
 
 block research
+  h3 Folder Structure
   p
-    | TBD
+    | There are many suggestions for where to store your test files. None really have advantages over others, it's just important to have a common location. 
+  p
+    | Usually tests are all stored inside of a folder separate from the source JavaScript files that are being tested. Here is a folder setup:
+  ul
+    li root/
+      ul
+        li src/ (source code to test)
+        li lib/ (third-party resources and dependencies)
+        li test/ (this is where the good stuff goes)
+  p
+    | Another name for the 'test' folder is 'tests'. Again, it doesn't matter too much*. You may wish to create subfolders within your test folder to separate out the different types of tests written. For example:
+  ul
+    li test/
+      ul
+        li unit/
+        li functional/
+  p
+    | *You will need to define the correct folder name if it differs from the default expected by your test runner suite.
+
+  h3 Yeti
+  p
+    | It's always best to run your tests in as many browsers as possible. However, it's tedious to run them all manually every time you make a change. Instead, using a test runner like YETI can save you time and effort when running your tests. 
+  p
+    a.btn(href="http://yeti.cx/") Yeti - Automated Test Runner
+  p
+    | The great thing about Yeti is that all it requires is a browser. It doesn't require any plugins, add-ons, etc. Almost any browser will do, which means you can also run your tests on mobile devices. For a great talk and a demo of Yeti in action, check out this talk by the tool's author, Reid Burke:
+  p
+    a.btn(href="http://www.youtube.com/watch?v=lA6XVosv04E") YUIConf 2012: Write Code That Works
+
+  p
+    | There are other things that Yeti takes care of like integration with Selenium and Code Coverage reporting. 
 
 block resources
   p
-    | TBD
+    a(href="http://karma-runner.github.io/") Karma (Alternative to Yeti)
 
 block assignment
   p
-    | TBD
+    | Unfortunately, there is no way to run Yeti solely from within Cloud9. If you have a local machine available with admin privelges and NodeJS installed, you can complete the '<a href="http://yeti.cx/quick-start/index.html#Running-a-test">running a test</a>' exercise via the Yeti Quick Start page.
+
+

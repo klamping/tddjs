@@ -19,21 +19,12 @@ block research
   p
     a.btn(href="http://cjohansen.no/en/javascript/javascript_test_spies_stubs_and_mocks#toc80380_3") Test Spies in Sinon.js &raquo;
 
-
 block resources
-  p
-    a(href="http://sinonjs.org/") Sinon.JS
-  p
-    a(href="http://www.pabich.eu/2010/07/java-script-unit-testing-with-yui-test.html") JavaScript unit testing with YUI Test and Jack mocking framework
-
-
-//http://pathfindersoftware.com/2006/11/tdd_and_javascr/
-// http://cjohansen.no/en/javascript/sinon_js_0_6_0_fake_xmlhttprequest_and_improved_test_framework_integration
-// http://cjohansen.no/en/javascript/test_spies_stubs_and_mocks_part_1_5
-// http://jsmockito.org/
-
-//http://iainjmitchell.com/blog/?p=296
-// http://agilepainrelief.com/notesfromatooluser/2008/11/unit-testing-in-javascript.html
+  ul
+    li
+      a(href="http://www.pabich.eu/2010/07/java-script-unit-testing-with-yui-test.html") JavaScript unit testing with YUI Test and Jack mocking framework
+    li
+      a(href="http://cjohansen.no/en/javascript/sinon_js_0_6_0_fake_xmlhttprequest_and_improved_test_framework_integration") Testing "Ajax" Code
 
 block assignment
   p
@@ -42,3 +33,6 @@ block assignment
     li In your existing Spoilr workspace, create a new file called 'spoilr-node.js'.
     li In that file, following the directions in the 'YUI and jsdom' article, set up an environment for executing the Spoilr-tests.js file in NodeJS.
     li Run your tests with the command "node spoilr-node.js"
+//
+  p
+    | To test spies and mocks, we'll write tests for a simple function that adds a class name to a DOM element. 
