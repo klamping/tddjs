@@ -34,7 +34,15 @@ block assignment
   ul
     li In your existing Spoilr workspace, create a new file called 'spoilr-node.js'.
     li In that file, following the directions in the 'YUI and jsdom' article, set up an environment for executing the Spoilr-tests.js file in NodeJS.
-    li Run your tests with the command "node spoilr-node.js"
+    ul
+      li You'll need to update the HTML created initially by jsdom so that it has the  HTML elements you need for your tests
+      li You'll need to load the 'spoilr.js' and 'spoilr-tests.js' files either by using 'require' (e.g. <code>var spoilr = require('./spoilr.js');</code>) or loading them as modules in YUI.
+      li Inside your YUI().use() callback function, all you need to do is simply call the YUI test runner: <code>Y.Test.Runner.run();</code>
+
+    li Run your tests with the command "<kbd>node spoilr-node.js</kbd>"
+
+  .alert.alert-warn
+    | jsdom does not currently fire <a href="https://github.com/tmpvar/jsdom/issues/533">'focus' and 'blur' events</a>, so one of your tests will fail. This is the trouble with trying to emulate a browser environment outside of the browser and why tools like PhantomJS and Yeti (which we'll talk about tomorrow) are so helpful.
 //
   p
-    | To test spies and mocks, we'll write tests for a simple function that adds a class name to a DOM element. 
+    | To test spies and mocks, we'll write tests for a simple function that adds a class name to a DOM element.
