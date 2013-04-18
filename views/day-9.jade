@@ -1,16 +1,38 @@
 extends day
 
 block description
-  | TBD
+  | The Game of Life - Part I
 
 block research
   p
-    | TBD
+    | Now it's time to apply what you've learned so far into a semi-realistic scenario. We could try coding something 100% real-life, but that's just boring. Instead, we're going to program <a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conley's Game of Life</a>. The rules of very simple:
+  ul
+    li Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
+    li Any live cell with more than three live neighbours dies, as if by overcrowding.
+    li Any live cell with two or three live neighbours lives on to the next generation.
+    li Any dead cell with exactly three live neighbours becomes a live cell.
+  p
+    | Those rules should look familiar. You probably created some requirements yesterday that look like:
+  ul
+    li It should kill a cell if there are less than two live neighbours next to it
+    li It should kill a cell if there are more than three neighbours next to it
+    li It should let a cell live if there are two or three neighbors next to it
+    li It should revive a cell if there are exactly three live neighbors next to it
+    li It should treat cells outside the game borders as dead cells
+  p
+    | Hopefully these requirements seem very simple. You're goal is to write a program You that can accept an arbitrary grid of cells. It should output a similar grid showing the next generation.
 
 block resources
-  p
-    | TBD
+  ul
+    li
+      a(href="http://codingdojo.org/cgi-bin/wiki.pl?KataGameOfLife") Kata - Game of Life
+    li
+      a(href="http://vimeo.com/31403388") Live Coding Session #1 - Conway's Game of Life
 
 block assignment
   p
-    | TBD
+    | Tomorrow we'll worry about creating a UI for the game, but today we'll focus on just getting a basic API up and running.
+  p
+    | Using TDD, create a simple JavaScript interface that accepts an initial configuration and outputs the next generation/turn in that configuration. So if you have a very simple setup with a single live cell, the output of that generation would be a completely dead area (the cell died because of underpopulation; it had no neighbours).
+  p
+    | If you have questions, use the contact/comment form on this page.
