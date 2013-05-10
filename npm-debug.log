@@ -1,0 +1,161 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'yeti' ]
+2 info using npm@1.1.65
+3 info using node@v0.6.15
+4 verbose read json /usr/local/lib/package.json
+5 verbose read json /usr/local/lib/package.json
+6 verbose cache add [ 'yeti', null ]
+7 silly cache add name=undefined spec="yeti" args=["yeti",null]
+8 verbose parsed url { pathname: 'yeti', path: 'yeti', href: 'yeti' }
+9 silly lockFile 7ceb7ce7-yeti yeti
+10 verbose lock yeti /Users/klamping/.npm/7ceb7ce7-yeti.lock
+11 silly lockFile 7ceb7ce7-yeti yeti
+12 verbose addNamed [ 'yeti', '' ]
+13 verbose addNamed [ null, '' ]
+14 silly lockFile 38e6f91f-yeti yeti@
+15 verbose lock yeti@ /Users/klamping/.npm/38e6f91f-yeti.lock
+16 silly addNameRange { name: 'yeti', range: '', hasData: false }
+17 verbose url raw yeti
+18 verbose url resolving [ 'https://registry.npmjs.org/', './yeti' ]
+19 verbose url resolved https://registry.npmjs.org/yeti
+20 info trying registry request attempt 1 at 15:55:08
+21 verbose etag "8DUPKKLQXA9UHTRAFKPSAPW00"
+22 http GET https://registry.npmjs.org/yeti
+23 http 304 https://registry.npmjs.org/yeti
+24 silly registry.get cb [ 304,
+24 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+24 silly registry.get     etag: '"8DUPKKLQXA9UHTRAFKPSAPW00"',
+24 silly registry.get     date: 'Thu, 25 Apr 2013 19:55:09 GMT',
+24 silly registry.get     'content-length': '0' } ]
+25 verbose etag yeti from cache
+26 silly addNameRange number 2 { name: 'yeti', range: '', hasData: true }
+27 silly addNameRange versions [ 'yeti',
+27 silly addNameRange   [ '0.1.0',
+27 silly addNameRange     '0.1.0rc3',
+27 silly addNameRange     '0.1.1',
+27 silly addNameRange     '0.1.2pre3',
+27 silly addNameRange     '0.1.2pre4',
+27 silly addNameRange     '0.1.2',
+27 silly addNameRange     '0.1.3',
+27 silly addNameRange     '0.1.4',
+27 silly addNameRange     '0.1.5',
+27 silly addNameRange     '0.1.6',
+27 silly addNameRange     '0.1.7',
+27 silly addNameRange     '0.1.8',
+27 silly addNameRange     '0.2.0',
+27 silly addNameRange     '0.2.1',
+27 silly addNameRange     '0.2.2',
+27 silly addNameRange     '0.2.3',
+27 silly addNameRange     '0.2.4',
+27 silly addNameRange     '0.2.5',
+27 silly addNameRange     '0.2.6',
+27 silly addNameRange     '0.2.7',
+27 silly addNameRange     '0.2.8',
+27 silly addNameRange     '0.2.9',
+27 silly addNameRange     '0.2.10',
+27 silly addNameRange     '0.2.11',
+27 silly addNameRange     '0.2.12',
+27 silly addNameRange     '0.2.13',
+27 silly addNameRange     '0.2.14',
+27 silly addNameRange     '0.2.15',
+27 silly addNameRange     '0.2.16',
+27 silly addNameRange     '0.2.17',
+27 silly addNameRange     '0.2.18',
+27 silly addNameRange     '0.2.19',
+27 silly addNameRange     '0.2.20',
+27 silly addNameRange     '0.2.21' ] ]
+28 verbose addNamed [ 'yeti', '0.2.21' ]
+29 verbose addNamed [ '0.2.21', '0.2.21' ]
+30 silly lockFile f7149e02-yeti-0-2-21 yeti@0.2.21
+31 verbose lock yeti@0.2.21 /Users/klamping/.npm/f7149e02-yeti-0-2-21.lock
+32 verbose read json /Users/klamping/.npm/yeti/0.2.21/package/package.json
+33 silly lockFile f7149e02-yeti-0-2-21 yeti@0.2.21
+34 silly lockFile 38e6f91f-yeti yeti@
+35 silly resolved [ { name: 'yeti',
+35 silly resolved     description: 'Test your JavaScript with any browser.',
+35 silly resolved     author:
+35 silly resolved      { name: 'Reid Burke',
+35 silly resolved        email: 'me@reidburke.com',
+35 silly resolved        url: 'http://reidburke.com' },
+35 silly resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+35 silly resolved     keywords: [ 'YUI', 'web app', 'YUITest', 'TDD', 'BDD', 'yui3', 'test' ],
+35 silly resolved     version: '0.2.21',
+35 silly resolved     homepage: 'htp://yuilibrary.com/projects/yeti',
+35 silly resolved     repository: { type: 'git', url: 'git://github.com/yui/yeti.git' },
+35 silly resolved     licenses: [ [Object] ],
+35 silly resolved     bugs: { url: 'http://yuilibrary.com/projects/yeti/report' },
+35 silly resolved     main: 'lib/yeti',
+35 silly resolved     bin: { yeti: './cli.js' },
+35 silly resolved     scripts:
+35 silly resolved      { pretest: 'jshint lib test && jake dep',
+35 silly resolved        test: 'jake test',
+35 silly resolved        postinstall: 'node scripts/postinstall.js' },
+35 silly resolved     engines: { node: '~0.6.4 || ~0.7.11 || ~0.8.0' },
+35 silly resolved     dependencies:
+35 silly resolved      { async: '~0.2.5',
+35 silly resolved        wd: '~0.0.27',
+35 silly resolved        echoecho: '~0.1.6',
+35 silly resolved        eventemitter2: '~0.4.8',
+35 silly resolved        eventyoshi: '~0.1.2',
+35 silly resolved        nopt: '~2.1.1',
+35 silly resolved        onyx: '~0.1.2',
+35 silly resolved        sockjs: '~0.3.1',
+35 silly resolved        'proto-list': '~1.2.2',
+35 silly resolved        glob: '~3.1.12',
+35 silly resolved        'graceful-fs': '~1.2.0' },
+35 silly resolved     devDependencies:
+35 silly resolved      { mocks: 'https://github.com/vojtajina/node-mocks/tarball/master',
+35 silly resolved        mockery: '>=1.4.0',
+35 silly resolved        portfinder: '>=0.2.1',
+35 silly resolved        istanbul: 'https://github.com/gotwarlost/istanbul/tarball/master',
+35 silly resolved        semver: '>=1.0.14',
+35 silly resolved        ronn: '>=0.3.8',
+35 silly resolved        jshint: '>=0.6.1',
+35 silly resolved        'node-phantom': '>=0.2.1',
+35 silly resolved        vows: '>=0.6.4',
+35 silly resolved        selleck: '>=0.1.12',
+35 silly resolved        yuidocjs: '>=0.2.39',
+35 silly resolved        jake: '>=0.2.35',
+35 silly resolved        rimraf: '>=2.0.1',
+35 silly resolved        walkdir: '>=0.0.5' },
+35 silly resolved     optionalDependencies: {},
+35 silly resolved     readme: '# Yeti\n\n[![Build Status](https://secure.travis-ci.org/yui/yeti.png?branch=master)](http://travis-ci.org/yui/yeti)\n[![Dependency Status](https://david-dm.org/yui/yeti.png)](https://david-dm.org/yui/yeti)\n\nYeti is a command-line tool for launching JavaScript unit tests in a browser\nand reporting the results without leaving your terminal.\nYeti is designed to work with tests built with\n[QUnit][],\n[Jasmine][],\n[Mocha][] with [Expect.js][] assertions,\n[Dojo Objective Harness][DOH], or\n[YUI Test][yuitest],\njust as they are.\n\n## Install Yeti\n\nThe latest release can be installed easily:\n\n    npm install -g yeti\n\nYeti requires Node.js, which provides the `npm` command for installation.\nYou can [download Node.js](http://nodejs.org/download/) source or pre-built\ninstallers from their website.\n\n## Using Yeti\n\n### Running a test\n\nJust run Yeti with the HTML files containing your tests.\n\n    $ yeti test/*.html\n    Creating a Hub at http://localhost:9000\n    Waiting for agents to connect at http://localhost:9000.\n    When ready, press Enter to begin testing.\n\nPoint your browsers at that URL, then come back and press Enter.\n\n    [Open some browsers...]\n\n      Agent connected: Safari (6.0) / Mac OS\n      Agent connected: Chrome (22.0.1221.0) / Mac OS\n\n    [Come back, press Enter]\n\n    ✔ Testing started on Safari (6.0) / Mac OS, Chrome (22.0.1221.0) / Mac OS\n    ✔ Agent completed: Safari (6.0) / Mac OS\n    ✔ Agent completed: Chrome (22.0.1221.0) / Mac OS\n    504 tests passed! (9.1 seconds)\n    $\n\nYeti exits automatically when all tests complete. If test failures occur, Yeti will exit with a non-zero status code.\n\n#### JUnit XML output\n\nYeti can output machine-readable JUnit XML suitable for use in [Jenkins][] with the `--junit` option.\n\n    $ yeti --junit test/*.html > yeti.xml\n\nYeti will output XML on stdout and status messages on stderr.\n\n#### Code coverage\n\nYeti automatically includes a line coverage summary if your tests were instrumented with [YUI Test Coverage][yuitest].\n\n    ✔ Testing started on Safari (6.0) / Mac OS\n    ► Testing... \\ 13% complete (10/60) 11.85 tests/sec ETA 4 minutes, 2 seconds 44% line coverage\n\n#### AJAX testing\n\nYeti provides server-side AJAX routes with [echoecho][ee]. Your test can\n[make relative HTTP requests][ee-usage] to test your code aganist server-side HTTP\nGET, POST, PUT, DELETE, OPTIONS, GET with delay, JSON or JSONP responses via POST,\nor any HTTP status code.\n\nExample supported routes:\n\n - `echo/status/500` returns a 500 response.\n - `echo/delay/3` returns a 200 response after 3 seconds.\n - `echo/jsonp?callback=foo` returns a JSONP response with the given\n    POST data wrapped in a call to `foo`.\n\nNote these routes are intentionally relative paths.\nSee the [echoecho README][ee-readme] for more details.\n\n#### Timeouts\n\nYeti will move on to the next test if a test takes longer than 5 minutes (300 seconds).\nYou can adjust this interval with the `--timeout` option.\n\nThis will run Yeti with a 120 second timeout:\n\n    $ yeti --timeout 120 test.html\n\nThere isn\'t a general timeout setting. Yeti actively pings browsers about every\n2-5 seconds and disconnects them if they fail to respond to a ping three times.\n\n#### Query string parameters\n\nYou can specify query string parameters to add to your test URLs.\nThis can be used to pass information to your tests that control its behavior.\n\nThis will append `?filter=coverage` to your tests, which is used by the tests\nfor the [YUI Library][YUI] to trigger loading instrumented code.\n\n    $ yeti --query \'filter=coverage\' test/*.html\n\n#### Error handling\n\nYeti will report an uncaught exceptions as Script Errors.\n\nYeti enforces [No-Quirks Mode][] in your tests because it may impact DOM-related APIs. [Add a DOCTYPE][doctype] to your test document to fix this.\n\n#### Mobile testing made easy\n\nWhen combined with [localtunnel][], mobile testing is simple. If you\'re not dealing with sensitive information, startup your Yeti Hub and then run:\n\n    $ localtunnel 9000\n       Port 9000 is now publicly accessible from http://3z48.localtunnel.com ...\n\nYou can then visit that URL on your mobile (or any other) device and have it run new tests.\n\n### Yeti Hub\n\nTo save time, start a Yeti Hub.\n\n    $ yeti --server\n    Yeti Hub listening on port 9000.\n\nPoint browsers at your local Yeti on port 9000. Now, you\'re ready to run tests without having to reconnect browsers each time.\n\nStarting Yeti in another terminal will connect to that Hub instead of starting a new one\nand will begin testing immediately if browsers are already connected.\n\n    $ yeti test/*.html\n    Connected to http://localhost:9000\n      Agent connected: Chrome (22.0.1221.0) / Mac OS\n      Agent connected: Safari (6.0) / Mac OS\n    ✔ Testing started on Chrome (22.0.1221.0) / Mac OS, Safari (6.0) / Mac OS\n    ✔ Agent completed: Chrome (22.0.1221.0) / Mac OS\n    ✔ Agent completed: Safari (6.0) / Mac OS\n    504 tests passed! (11.5 seconds)\n    $\n\n#### Sharing\n\nYour Yeti Hub can be shared with other developers.\n\nFirst, I\'ll start a Hub on test.yeti.cx on port 80.\n\n    $ yeti --server --port 80\n\nGo ahead and point a few browsers there.\n\nNow, others can connect to it from their computer like so:\n\n    $ yeti --hub http://test.yeti.cx/ test/*.html\n    Connected to http://test.yeti.cx/\n    Waiting for agents to connect at http://test.yeti.cx/.\n    When ready, press Enter to begin testing.\n\nYour `pwd` and your test file will be served through the Hub. Like magic.\n\n    [Hit Enter]\n      Agent connected: Chrome (22.0.1221.0) / Mac OS\n      Agent connected: Safari (6.0) / Mac OS\n    ✔ Testing started on Chrome (22.0.1221.0) / Mac OS, Safari (6.0) / Mac OS\n    ✔ Agent completed: Safari (6.0) / Mac OS\n    ✔ Agent completed: Chrome (22.0.1221.0) / Mac OS\n    504 tests passed! (8.7 seconds)\n\nThis makes it really simple to setup an ad-hoc testing lab shared with your team.\n\n#### Browser launching\n\nYou can specify the `wd-hub` option to connect Yeti to a Selenium 2 Hub\nusing the WebDriver protocol. Specifying one or more `browser` options will cause Yeti to launch the\ngiven browsers over WebDriver.\n\nFor example, you can start a Yeti Hub like this:\n\n    yeti --server --wd-url http://selenium.example.com:4444\n\nThen run tests on two Chrome browsers like this:\n\n    yeti --browser chrome --browser chrome test.html\n\nValid options for `browser` include:\n\n- Chrome\n- Firefox\n- Safari\n- IE\n- iPad\n- PhantomJS\n\nYou can specify a platform for desktop browsers by specifying the\ndesired platform after a slash `/`, e.g. `chrome/xp`. Valid platforms,\ndefined by the WebDriver protocol, include:\n\n- `Windows`\n- `XP`\n- `Mac`\n- `Linux`\n- `Vista`\n\n### Options\n\nHere\'s a breakdown of all available CLI options.\n\n - *query* (String) Query string parameters to pass to tests.\n - *timeout* (Number in seconds) Test timeout.\n - *hub* (URL) Location of the Yeti Hub to use.\n   Set to `false` or specify `--no-hub` to override a configuration file.\n - *server* Starts a Yeti Hub.\n - *port* (Number) Yeti Hub will listen to this port.\n - *loglevel* (`debug` or `info`) Print debugging information.\n - *browser* (String) Browser to launch with WebDriver.\n   Requires a Hub with a `wd-host` and `wd-port` configured.\n - *wd-url* (URL) WebDriver Hub URL. May contain a username and password.\n - *help* Print usage.\n - *version* Print the Yeti version.\n\n#### Configuration file\n\nYou may use place JSON in a `.yeti.json` file to set project or user specific configuration.\n\nYeti will look for `.yeti.json` in these places:\n\n - Recursively starting in the directory you start Yeti\n - In your home folder\n\nHere is an example `.yeti.json` for the YUI project, which is placed in the repository root:\n\n    {\n        "hub": "http://test.yeti.cx/",\n        "basedir": ".",\n        "glob": "**/tests/unit/*.html"\n    }\n\nHere is the breakdown of these settings:\n\n - The *hub* option defines a Yeti Hub URL to use.\n - The *basedir* option indicates that the directory where `.yeti.json` lives is\n    permitted to serve files to the Yeti Hub.\n - The *glob* option defines a pattern to search for test files.\n\nThese settings let YUI developers simply run `yeti` inside of the project directory\nto run tests. Since all tests in the project match the glob pattern, the `yeti`\ncommand works for specific components as well as for the entire project.\n\nThis configuration can be overridden on the command line. For example, to ignore the\nhub setting, you can run Yeti with `--no-hub`.\n\n## Yeti API\n\nYou can `require("yeti")` inside your application to script Yeti for your own use.\n\nFor API documentation:\n\n - Run `make html` to build HTML documentation to `./build_docs`.\n - Review code comments inside `lib/yeti.js`, `lib/client.js` and `lib/hub/index.js`.\n\nYeti follows [Semantic Versioning](http://semver.org/) but is currently at a 0.x.y release. **The public API is not stable.** There will be changes.\n\n## Caveats\n\n### Platforms\n\nYeti should work on all platforms supported by Node.js.\nIt\'s tested on Linux and OS X.\n\n### Serving tests\n\nYou must start Yeti\'s client in the directory you\'ll be serving tests from. For security reasons, Yeti will reject requests that try to access files outside of the directory you start Yeti in.\n\n## Install latest Yeti snapshot\n\nYou can install the latest development snapshot of Yeti easily:\n\n    npm install -g http://latest.yeti.cx\n\nThis will install Yeti as it exists on the [yui/yeti GitHub repository][github].\nYou can check the stability of the Yeti snapshot by checking [yui/yeti on Travis][travis].\n\n## Develop Yeti\n\nDo you want to add new features or fix bugs in Yeti itself? We made it easy for you to hack on Yeti.\n\n### Experimental: Develop on Windows\n\nAfter running `npm install`, replace the `make` commands below with\n`.\\jake.bat` to use the experimental Jake tasks that are Windows ready.\n\n### Code\n\n#### Install dependencies\n\nClone Yeti.\n\n    git clone https://github.com/yui/yeti.git\n    cd yeti\n\nInstall Yeti\'s dependencies.\n\n    npm install\n\n#### Run tests & code coverage\n\nYeti\'s automated tests require PhantomJS.\nYou can [download PhantomJS](http://phantomjs.org/download.html) source or pre-built\nbinaries from their website. Make sure the `phantomjs` binary is installed in your PATH.\n\n    make test\n    make coverage\n\nThe latter command uses [JSCoverage for Node.js][jsc],\nwhich will be built and installed to `./tools/jscoverage`.\n\n#### Linter\n\n    make lint\n\nYou may also run the linter on individual files with `./go lint`:\n\n    ./go lint test/blizzard.js\n\nYeti uses [JSHint][] to analyze code for problems. See `.jshintrc` for options used by Yeti.\n\n#### Profiler\n\nRequires [Google Chrome Canary][canary] and OS X.\n\nProfile the Yeti Hub:\n\n    ./go profile --server\n\nUsing `./go profile` without `--server` to profile the Yeti client\nrequires an interactive terminal, which does not yet work.\n\n### HTML documentation\n\n#### Website\n\nYeti uses [Selleck][] to generate its website. Selleck files are located in `doc/`.\n\n    make html\n\nDocumentation will be built to `build_docs/`.\n\n#### JavaScript API\n\nYeti uses [YUIDocJS][] to generate API documentation from inline JSDoc comment blocks.\n\n    make html-api\n\nDocumentation will be built to `build_docs/api/everything/`.\n\n### Contribute to Yeti\n\nSee [CONTRIBUTING.md](https://github.com/yui/yeti/blob/master/CONTRIBUTING.md).\n\n## Bugs & Feedback\n\nOpen a ticket on [YUILibrary.com\'s Yeti Issue Tracker][issues] to report bugs or feature requests.\n\n## License\n\nYeti is free to use under YUI\'s BSD license.\nSee the LICENSE file or the [YUI license page](http://yuilibrary.com/license/)\nfor license text and copyright information.\n\n  [Jenkins]: http://jenkins-ci.org/\n  [ee]: https://github.com/davglass/echoecho\n  [ee-usage]: https://github.com/davglass/echoecho#using-in-your-tests\n  [ee-readme]: https://github.com/davglass/echoecho#readme\n  [canary]: https://tools.google.com/dlpage/chromesxs\n  [github]: https://github.com/yui/yeti\n  [travis]: http://travis-ci.org/yui/yeti\n  [JSHint]: http://jshint.com/\n  [YUIDocJS]: https://github.com/davglass/yuidocjs\n  [Selleck]: http://github.com/rgrove/selleck\n  [jsc]: https://github.com/visionmedia/node-jscoverage\n  [localtunnel]: http://localtunnel.com/\n  [node]: http://nodejs.org/\n  [npm]: http://npmjs.org/\n  [issues]: http://yuilibrary.com/projects/yeti/newticket\n  [YUI]: http://yuilibrary.com/\n  [yuitest]: http://yuilibrary.com/yuitest/\n  [QUnit]: http://qunitjs.com/\n  [Mocha]: http://visionmedia.github.com/mocha/\n  [Expect.js]: https://github.com/LearnBoost/expect.js\n  [Jasmine]: http://pivotal.github.com/jasmine/\n  [DOH]: http://dojotoolkit.org/reference-guide/util/doh.html\n  [doctype]: http://www.whatwg.org/specs/web-apps/current-work/multipage/syntax.html#the-doctype\n  [No-Quirks Mode]: http://www.whatwg.org/specs/web-apps/current-work/multipage/dom.html#no-quirks-mode\n',
+35 silly resolved     readmeFilename: 'README.md',
+35 silly resolved     _id: 'yeti@0.2.21',
+35 silly resolved     _from: 'yeti' } ]
+36 info install yeti@0.2.21 into /usr/local/lib
+37 info installOne yeti@0.2.21
+38 verbose from cache /Users/klamping/.npm/yeti/0.2.21/package/package.json
+39 info /usr/local/lib/node_modules/yeti unbuild
+40 verbose read json /usr/local/lib/node_modules/yeti/package.json
+41 verbose tar unpack /Users/klamping/.npm/yeti/0.2.21/package.tgz
+42 silly lockFile b4519f61-usr-local-lib-node-modules-yeti /usr/local/lib/node_modules/yeti
+43 verbose lock /usr/local/lib/node_modules/yeti /Users/klamping/.npm/b4519f61-usr-local-lib-node-modules-yeti.lock
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 error Error: EACCES, mkdir '/usr/local/lib/node_modules/yeti'
+45 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/yeti']
+45 error   errno: 3,
+45 error   code: 'EACCES',
+45 error   path: '/usr/local/lib/node_modules/yeti',
+45 error   fstream_type: 'Directory',
+45 error   fstream_path: '/usr/local/lib/node_modules/yeti',
+45 error   fstream_class: 'DirWriter',
+45 error   fstream_stack:
+45 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+45 error      'Object.oncomplete (/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53)' ] }
+46 error Please try running this command again as root/Administrator.
+47 error System Darwin 12.3.0
+48 error command "node" "/usr/local/bin/npm" "install" "-g" "yeti"
+49 error cwd /Users/klamping/Sites/tddjs
+50 error node -v v0.6.15
+51 error npm -v 1.1.65
+52 error path /usr/local/lib/node_modules/yeti
+53 error fstream_path /usr/local/lib/node_modules/yeti
+54 error fstream_type Directory
+55 error fstream_class DirWriter
+56 error code EACCES
+57 error errno 3
+58 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/yeti'
+59 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+59 error fstream_stack Object.oncomplete (/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53)
+60 verbose exit [ 3, true ]
